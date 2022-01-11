@@ -90,7 +90,7 @@ const Navbar = () => {
             <li className="listItem">Homepage</li>
             <li className="listItem">Products</li>
             <li className="listItem">Menu</li>
-            <Image src="/img/logo.png" alt="" width="100px" height="69px" />
+            <Image src="/img/logo.png" alt="" width="130px" height="150px" />
             <li className="listItem">Events</li>
             <li className="listItem">Blog</li>
             <li className="listItem">Contact</li>
