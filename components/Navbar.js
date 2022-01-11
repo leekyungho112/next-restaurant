@@ -11,6 +11,7 @@ const style = css`
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 3;
   }
   .item {
     flex: 1;
