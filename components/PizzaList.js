@@ -20,6 +20,15 @@ const style = css`
     width: 100%;
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 480px) {
+    .title {
+      text-align: center;
+    }
+    .desc {
+      width: 90%;
+      text-align: center;
+    }
+  }
 `;
 
 const PizzaList = () => {

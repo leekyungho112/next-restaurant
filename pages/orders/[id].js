@@ -81,6 +81,51 @@ const style = css`
     margin-top: 20px;
     cursor: not-allowed;
   }
+  @media screen and (max-width: 480px) {
+    .container {
+      flex-direction: column;
+    }
+    .trTitle {
+      display: none;
+    }
+    .tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .id::before {
+      content: 'Order ID: ';
+      font-weight: 500;
+    }
+    .name::before {
+      content: 'Customer: ';
+      font-weight: 500;
+    }
+    .address::before {
+      content: 'Address: ';
+      font-weight: 500;
+    }
+    .total::before {
+      content: 'Total: ';
+      font-weight: 500;
+    }
+    .row:last-child {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .done,
+    .inProgress,
+    .undone {
+      margin-bottom: 20px;
+    }
+    .wrapper {
+      width: 100%;
+    }
+  }
 `;
 
 const Order = () => {
@@ -96,13 +141,13 @@ const Order = () => {
         <div className="row">
           <table className="table">
             <tbody>
-              <tr className="tr">
+              <tr className="trTitle">
                 <th>Order ID</th>
                 <th>Customer</th>
                 <th>Address</th>
                 <th>Total</th>
               </tr>
-              <tr>
+              <tr className="tr">
                 <td>
                   <span className="id">87328478</span>
                 </td>
@@ -110,7 +155,7 @@ const Order = () => {
                   <span className="name">Tomas Lee</span>
                 </td>
                 <td>
-                  <span className="address">GangNam st. 29494 SEOUL</span>
+                  <span className="address">Gang st.244 KR</span>
                 </td>
 
                 <td>

@@ -26,6 +26,18 @@ const style = css`
     color: #777;
     font-size: 14px;
   }
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 100%;
+    }
+    .title {
+      font-size: 30px;
+    }
+    .price,
+    .desc {
+      font-size: 24px;
+    }
+  }
 `;
 const PizzaCard = () => {
   return (

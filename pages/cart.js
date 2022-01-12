@@ -55,6 +55,56 @@ const style = css`
   td {
     text-align: center;
   }
+  @media screen and (max-width: 480px) {
+    .container {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .trTitle {
+      display: none;
+    }
+    .tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .imgContainer {
+      width: 35vw;
+      height: 35vw;
+    }
+    .name,
+    .total {
+      font-size: 24px;
+    }
+    .extras,
+    .price,
+    .quantity {
+      font-size: 22px;
+    }
+    .price::before {
+      content: 'Price: ';
+      font-weight: bold;
+    }
+    .quantity::before {
+      content: 'Quantity: ';
+      font-weight: bold;
+    }
+    .total::before {
+      content: 'Total: ';
+      font-weight: bold;
+    }
+    .wrapper {
+      width: 100%;
+    }
+  }
 `;
 const Cart = () => {
   return (
@@ -62,7 +112,7 @@ const Cart = () => {
       <div className="left">
         <table className="table">
           <tbody>
-            <tr className="tr">
+            <tr className="trTitle">
               <th>Product</th>
               <th>Name</th>
               <th>Extras</th>
@@ -70,7 +120,7 @@ const Cart = () => {
               <th>Quantity</th>
               <th>Total</th>
             </tr>
-            <tr>
+            <tr className="tr">
               <td>
                 <div className="imgContainer">
                   <Image
@@ -97,7 +147,7 @@ const Cart = () => {
                 <span className="total">$39.80</span>
               </td>
             </tr>
-            <tr>
+            <tr className="tr">
               <td>
                 <div className="imgContainer">
                   <Image

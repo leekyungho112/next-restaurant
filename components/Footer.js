@@ -31,6 +31,24 @@ const style = css`
   .motto {
     color: white;
   }
+  @media screen and (max-width: 480px) {
+    .container {
+      height: auto;
+      text-align: center;
+    }
+    .item:first-child {
+      display: none;
+    }
+    .item {
+      flex-direction: column;
+    }
+    .title {
+      font-size: 30px;
+    }
+    .text {
+      font-size: 20px;
+    }
+  }
 `;
 
 const Footer = () => {
