@@ -72,6 +72,14 @@ const style = css`
     color: #d1411e;
     font-weight: bold;
   }
+  @media screen and (max-width: 480px) {
+    .item:nth-child(2) {
+      display: none;
+    }
+    .item:nth-child(1) {
+      flex: 3;
+    }
+  }
 `;
 const Navbar = () => {
   return (

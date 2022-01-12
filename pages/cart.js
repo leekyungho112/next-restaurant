@@ -56,73 +56,75 @@ const style = css`
     text-align: center;
   }
 `;
-const cart = () => {
+const Cart = () => {
   return (
     <div className="container">
       <div className="left">
         <table className="table">
-          <tr className="tr">
-            <th>Product</th>
-            <th>Name</th>
-            <th>Extras</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-          </tr>
-          <tr>
-            <td>
-              <div className="imgContainer">
-                <Image
-                  src="/img/pizza.png"
-                  alt=""
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-            </td>
-            <td>
-              <span className="name">Pepperoni</span>
-            </td>
-            <td>
-              <span className="extras">Double ingredient, spicy sauce</span>
-            </td>
-            <td>
-              <span className="price">$19.90</span>
-            </td>
-            <td>
-              <span className="quantity">2</span>
-            </td>
-            <td>
-              <span className="total">$39.80</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="imgContainer">
-                <Image
-                  src="/img/pizza.png"
-                  alt=""
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-            </td>
-            <td>
-              <span className="name">Pepperoni</span>
-            </td>
-            <td>
-              <span className="extras">Double ingredient, spicy sauce</span>
-            </td>
-            <td>
-              <span className="price">$19.90</span>
-            </td>
-            <td>
-              <span className="quantity">2</span>
-            </td>
-            <td>
-              <span className="total">$39.80</span>
-            </td>
-          </tr>
+          <tbody>
+            <tr className="tr">
+              <th>Product</th>
+              <th>Name</th>
+              <th>Extras</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>
+                <div className="imgContainer">
+                  <Image
+                    src="/img/pizza.png"
+                    alt=""
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+              </td>
+              <td>
+                <span className="name">Pepperoni</span>
+              </td>
+              <td>
+                <span className="extras">Double ingredient, spicy sauce</span>
+              </td>
+              <td>
+                <span className="price">$19.90</span>
+              </td>
+              <td>
+                <span className="quantity">2</span>
+              </td>
+              <td>
+                <span className="total">$39.80</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className="imgContainer">
+                  <Image
+                    src="/img/pizza.png"
+                    alt=""
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+              </td>
+              <td>
+                <span className="name">Pepperoni</span>
+              </td>
+              <td>
+                <span className="extras">Double ingredient, spicy sauce</span>
+              </td>
+              <td>
+                <span className="price">$19.90</span>
+              </td>
+              <td>
+                <span className="quantity">2</span>
+              </td>
+              <td>
+                <span className="total">$39.80</span>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div className="right">
@@ -145,4 +147,4 @@ const cart = () => {
   );
 };
 
-export default cart;
+export default Cart;

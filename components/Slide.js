@@ -7,6 +7,7 @@ const style = css`
     height: calc(100vh - 100px);
     background-color: #d1411e;
     overflow: hidden;
+    position: relative;
   }
   .arrowContainer {
     position: absolute;
@@ -28,6 +29,11 @@ const style = css`
     width: 100vw;
     height: 100%;
     position: relative;
+  }
+  @media screen and (max-width: 480px) {
+    .container {
+      height: 50vh;
+    }
   }
 `;
 
